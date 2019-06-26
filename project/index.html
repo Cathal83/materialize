@@ -52,6 +52,15 @@
                     <li><a href="#photos">Photos</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a></li>
                 </ul>
 
                 <ul class="sidenav grey lighten-2" id="mobile-menu">
@@ -171,7 +180,6 @@
                         <textarea id="message" class="materialize-textarea"></textarea>        
                     </div>
                     <div class="input-field">
-                        <i class="material-icons">calendar</i>
                         <label for="date">Choose a date you need me for</label>
                         <input type="text" name="" id="date" class="datepicker">
                     </div>
@@ -238,6 +246,7 @@
         $('.datepicker').datepicker({
             disableWeekends: true
         });
+        $('.tooltipped').tooltip();
     });
   </script>
 </body>
