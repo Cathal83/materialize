@@ -22,6 +22,15 @@
           padding-top: 4vw;
           padding-bottom: 4vw;
       }
+
+      .tabs .indicator{
+          background-color: #1a237e;
+      }
+
+      .tabs .tab a:focus, .tabs .tab a:focus.active{
+          background: transparent;
+      }
+
       @media screen and (max-width: 670px){
           header {
               min-height: 500px;
@@ -41,14 +50,14 @@
                 </a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#photos">Photos</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
 
                 <ul class="sidenav grey lighten-2" id="mobile-menu">
                     <li><a href="#photos">Photos</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>                  
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>                  
                 </ul>
             </div>
         </nav>
@@ -92,11 +101,61 @@
     </section>
   <!-- parallax -->
 
+  <div class="parallax-container">
+      <div class="parallax">
+          <img src="img/street.jpg"" alt="" class="responsive-img">
+      </div>
+  </div>
+
   <!-- services / tabs -->
 
+  <section class="container section" id="services">
+      <div class="row">
+            <div class="col s12 l4">
+                <h2 class="indigo-text text-darken-4">What I do...</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores fuga reprehenderit distinctio nisi consequatur fugit iusto tempore quos, architecto provident ab, pariatur iste vel fugiat, exercitationem illum id tenetur?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores fuga reprehenderit distinctio nisi consequatur fugit iusto tempore quos, architecto provident ab, pariatur iste vel fugiat, exercitationem illum id tenetur?</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="photography">
+                    <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores fuga reprehenderit distinctio nisi consequatur fugit iusto tempore quos, architecto provident ab, pariatur iste vel fugiat, exercitationem illum id tenetur?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores fuga reprehenderit distinctio nisi consequatur fugit iusto tempore quos, architecto provident ab, pariatur iste vel fugiat, exercitationem illum id tenetur?</p>
+                </div>
+                <div class="col s12" id="editing">
+                    <p class="flow-text indigo-text text-darken-4">EDITING</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores fuga reprehenderit distinctio nisi consequatur fugit iusto tempore quos, architecto provident ab, pariatur iste vel fugiat, exercitationem illum id tenetur?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores fuga reprehenderit distinctio nisi consequatur fugit iusto tempore quos, architecto provident ab, pariatur iste vel fugiat, exercitationem illum id tenetur?</p>
+                </div>
+            </div>
+        </div>
+  </section>
+
   <!-- parallax -->
+  
+  <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/stars.jpg"" alt="" class="responsive-img">
+        </div>
+    </div>
 
   <!-- contact form -->
+
+  <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores fuga reprehenderit distinctio nisi consequatur fugit iusto tempore quos, architecto provident ab, pariatur iste vel fugiat, exercitationem illum id tenetur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores fuga reprehenderit distinctio nisi consequatur fugit iusto tempore quos, architecto provident ab, pariatur iste vel fugiat, exercitationem illum id tenetur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores fuga reprehenderit distinctio nisi consequatur fugit iusto tempore quos, architecto provident ab, pariatur iste vel fugiat, exercitationem illum id tenetur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores fuga reprehenderit distinctio nisi consequatur fugit iusto tempore quos, architecto provident ab, pariatur iste vel fugiat, exercitationem illum id tenetur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores fuga reprehenderit distinctio nisi consequatur fugit iusto tempore quos, architecto provident ab, pariatur iste vel fugiat, exercitationem illum id tenetur?</p>
+      </div>
 
   <!-- footer -->
 
@@ -106,7 +165,9 @@
   <script>
     $(document).ready(function(){
         $('.sidenav').sidenav();
-        $(.'materialboxed').materialbox();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
     });
   </script>
 </body>
